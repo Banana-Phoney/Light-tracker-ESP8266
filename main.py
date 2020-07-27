@@ -11,12 +11,72 @@ retning = 40
 
 adc = machine.ADC(0)
 
-servopin = machine.Pin(14)
-servo = machine.PWM(servopin, freq=50)
 
 ldr1.value(0)
 ldr2.value(0)
-servo.duty(retning)
+
+mp1 = machine.Pin(12, machine.Pin.OUT)
+mp2 = machine.Pin(13, machine.Pin.OUT)
+mp3 = machine.Pin(15, machine.Pin.OUT)
+mp4 = machine.Pin(3, machine.Pin.OUT)
+
+mp1.value(0)
+mp2.value(0)
+mp3.value(0)
+mp4.value(0)
+
+def turnl():
+    mp4.value(0)
+    mp1.value(1)
+    time.sleep_ms(25)
+    mp1.value(1)
+    mp2.value(1)
+    time.sleep_ms(25)
+    mp1.value(0)
+    mp2.value(1)
+    time.sleep_ms(25)
+    mp2.value(1)
+    mp3.value(1)
+    time.sleep_ms(25)
+    mp2.value(0)
+    mp3.value(1)
+    time.sleep_ms(25)
+    mp3.value(1)
+    mp4.value(1)
+    time.sleep_ms(25)
+    mp3.value(0)
+    mp4.value(1)
+    time.sleep_ms(25)
+    mp4.value(1)
+    mp1.value(1)
+    time.sleep_ms(25)
+
+def turnr():
+    mp1.value(0)
+    mp4.value(1)
+    time.sleep_ms(25)
+    mp4.value(1)
+    mp3.value(1)
+    time.sleep_ms(25)
+    mp4.value(0)
+    mp3.value(1)
+    time.sleep_ms(25)
+    mp3.value(1)
+    mp2.value(1)
+    time.sleep_ms(25)
+    mp3.value(0)
+    mp2.value(1)
+    time.sleep_ms(25)
+    mp2.value(1)
+    mp1.value(1)
+    time.sleep_ms(25)
+    mp2.value(0)
+    mp1.value(1)
+    time.sleep_ms(25)
+    mp1.value(1)
+    mp4.value(1)
+    time.sleep_ms(25)
+
 
 #print(ldr1val, ldr2val)
 
@@ -38,24 +98,16 @@ while True:
     #print(sammen)
 
     if (sammen >= 99):
-        retning +=10
+        for i in range(20):
+            turnr()
     elif (sammen <= -99):
-        retning -=10
+        for i in range(20):
+            turnl()
     else:
-        retning +=0
-    #    print("nothing to do")
+        pass
+        
+    mp1.value(0)
+    mp4.value(0)
 
-    if (retning < 40):
-        retning = 40
-    elif (retning > 120):
-        retning = 120
-    else:
-        retningt = retning
-
-    servo.duty(retning)
-
-
-
-    #print(retning)
     #print("-------------------------")
-    time.sleep(2)
+    time.sleep_ms(100)
