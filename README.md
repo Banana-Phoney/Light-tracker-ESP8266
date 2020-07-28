@@ -25,7 +25,7 @@ Parts so far:
 
 
 Connection schematic 
-![Schematic](/Images/Schematic.PNG)
+![Schematic2](/Images/Schematic2.PNG)
 
 Picture from the top of the setup
 ![Top](/Images/Top.jpg)
