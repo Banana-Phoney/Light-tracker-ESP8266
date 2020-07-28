@@ -11,7 +11,9 @@ Parts so far:
 
   1 x ESP8266 NodeMCU.
   
-  1 X MG90S Servo - generic.
+  1 X 28BYJ-48 step motor
+  
+  1 X ULN2003APG step motor driver board
   
   2 X Light dependent resistors.
   
