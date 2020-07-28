@@ -25,7 +25,13 @@ Parts so far:
 
 
 Connection schematic 
-![Schematic](/Images/Schematic.PNG)
+![Schematic2](/Images/Schematic2.png)
+
+The solar panel "construction"
+![solarpanel_construction](/Images/solarpanel_construction.jpg)
+
+The electronic parts are cramed in and is held up with double sided tape.
+![electronics](/Images/electronics.jpg)
 
 Picture from the top of the setup
 ![Top](/Images/Top.jpg)
