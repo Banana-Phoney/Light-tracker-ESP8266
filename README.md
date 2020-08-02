@@ -30,7 +30,7 @@ Parts so far:
   wires.
 
 
-Connection schematic 
+Connection schematic (error: wire after the resistor should go to ground not 5v) 
 ![Schematic2](/Images/Schematic2.png)
 
 The solar panel "construction"
