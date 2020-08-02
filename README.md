@@ -34,10 +34,10 @@ Connection schematic
 ![Schematic2_1](/Images/Schematic2_1.png)
 
 The solar panel "construction"
-![solarpanel_construction](/Images/solarpanel_construction.jpg)
+![solarpanel_construction](/Images/Main_construction.jpg)
 
-The electronic parts are cramed in and is held up with double sided tape.
-![electronics](/Images/electronics.jpg)
+The electronic parts are cramed in to a box rated for outdoor use. There may be some tape covering the hole for cables
+![electronics](/Images/Electronics_box.jpg)
 
 Picture from the top of the setup
 ![Top](/Images/Top.jpg)
